@@ -47,11 +47,13 @@ const TicTacToe = () => {
       ];
   
       for (let condition of winningConditions) {
-        console.log(condition);
         const [a, b, c] = condition;
         if (newData[a] && newData[a] === newData[b] && newData[b] === newData[c]) {
           won(newData[a]);
           return;
+        }
+        if(count === 8){
+          won('draw');
         }
       }
     };
@@ -60,9 +62,12 @@ const TicTacToe = () => {
     setLock(true);
     if(winner === 'X'){
       titleRef.current.innerHTML = 'Player 1 won the Game';
-    }else{
+    }else if(winner === 'O'){
       titleRef.current.innerHTML = 'Player 2 won the Game';
+    }else{
+      titleRef.current.innerHTML = 'Match Draw';
     }
+   
   }
 
   const resetGame = () => {
