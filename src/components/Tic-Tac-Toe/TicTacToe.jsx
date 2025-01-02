@@ -85,6 +85,10 @@ const TicTacToe = () => {
   return (
     <div className ='container'>
       <h2 className='text' ref={titleRef}>Tic Tac Toe Game in React</h2>
+      <div className='playerContainer'>
+        <h2 className='player'>Player One - <span>X</span></h2>
+        <h2  className='player'>Player Two - <span>O</span></h2>
+      </div>
       <div className='boxContainer'>
         <div className='row'>
           <div className='box' onClick={(e)=>boxClick(e,0)}></div>

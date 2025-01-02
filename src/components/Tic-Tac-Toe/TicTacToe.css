@@ -4,7 +4,7 @@
 .text{
     font-size: 48px;
     font-weight: bold;
-    margin-top: 40px;
+    margin-top: 20px;
     color: whitesmoke;
     letter-spacing: 3px;
 }
@@ -30,7 +30,7 @@
     border-radius: 10px;
 }
 .btnContainer{
-    margin-top: 50px;
+    margin-top: 20px;
 }
 .btn{
     background-color: red;
@@ -42,4 +42,19 @@
     outline: none;
     box-shadow: 3px 3px 5px red;
     cursor: pointer;
+}
+.playerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.player{
+    font-size: 24px;
+    font-weight: bold;
+    color: whitesmoke;
+    margin-right: 30px;
+}
+span{
+    color: red;
 }
